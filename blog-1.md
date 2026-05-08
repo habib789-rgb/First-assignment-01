@@ -1,0 +1,3 @@
+any is called a “type safety hole” in TypeScript because it completely disables type checking. You can store any kind of value in it and perform any operation without errors during compile time. This makes the code unsafe because mistakes are only caught at runtime.
+On the other hand, unknown is safer because TypeScript forces you to check the type before using it. You cannot directly access or manipulate its value.
+This is where type narrowing comes in. Type narrowing means refining a variable’s type using checks like typeof, instanceof, or custom conditions before using it. It helps make code more safe and reliable.
